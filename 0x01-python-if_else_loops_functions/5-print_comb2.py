@@ -4,7 +4,7 @@ count = 0
 
 while count <= 99:
     if count != 99:
-        print("{}".format(count), end=(", "))
+        print("{:02}".format(count), end=(", "))
     else:
         print("99")
 
