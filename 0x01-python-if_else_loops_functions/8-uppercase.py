@@ -6,10 +6,10 @@ def uppercase(str):
     for x in str:
         y = ord(x)
         if y >= 97 and y <= 122:
-            y = chr(y - 32)
-            print("{}".format(y), end="")
+            y -= 32
 
-        else:
-            print("{}".format(x), end="")
+        y = chr(y)
+
+        print("{}".format(y), end="")
 
     print()
