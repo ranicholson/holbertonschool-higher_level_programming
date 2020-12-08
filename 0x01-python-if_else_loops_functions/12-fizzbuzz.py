@@ -19,5 +19,3 @@ def fizzbuzz():
             print("{} ".format(x), end="")
 
         x += 1
-
-    print()
