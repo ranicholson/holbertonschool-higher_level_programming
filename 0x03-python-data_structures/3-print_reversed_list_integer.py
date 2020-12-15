@@ -4,10 +4,9 @@
 def print_reversed_list_integer(my_list=[]):
 
     x = 0
-    y = len(my_list)
+    my_list.reverse()
 
     while len(my_list) - x != 0:
 
-        print("{:d}".format(my_list[(y - 1)]))
-        y -= 1
+        print("{:d}".format(my_list[x]))
         x += 1
