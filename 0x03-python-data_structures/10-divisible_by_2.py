@@ -3,17 +3,15 @@
 
 def divisible_by_2(my_list=[]):
 
-    if len(my_list) == 0:
-        nlist = []
-        return nlist
-
     nlist = my_list.copy()
+    y = 0
 
     for x in my_list:
         if x % 2 == 0:
-            nlist[x] = True
+            nlist[y] = True
 
         else:
-            nlist[x] = False
+            nlist[y] = False
+        y += 1
 
     return nlist
