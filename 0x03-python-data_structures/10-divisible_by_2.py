@@ -6,7 +6,7 @@ def divisible_by_2(my_list=[]):
     nlist = my_list.copy()
 
     for x in my_list:
-        if x % 2 == 0 and x != 0:
+        if x % 2 == 0:
             nlist[x] = True
 
         else:
