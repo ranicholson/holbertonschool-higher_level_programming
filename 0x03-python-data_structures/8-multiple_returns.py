@@ -4,9 +4,6 @@
 def multiple_returns(sentence):
 
     if len(sentence) == 0:
-        multup = (0, "None")
-        return multup
+        return (0, None)
 
-    multup = (len(sentence), sentence[0])
-
-    return multup
+    return (len(sentence), sentence[0])
