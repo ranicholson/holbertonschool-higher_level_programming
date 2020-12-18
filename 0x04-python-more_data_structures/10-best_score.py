@@ -3,5 +3,5 @@
 
 def best_score(a_dictionary):
 
-    if a_dictionary:
+    if a_dictionary is dict and a_dictionary is not None:
         return sorted(a_dictionary)[-1]
