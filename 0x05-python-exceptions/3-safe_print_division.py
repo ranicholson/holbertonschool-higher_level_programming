@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+B#!/usr/bin/python3
 
 
 def safe_print_division(a, b):
@@ -7,7 +7,7 @@ def safe_print_division(a, b):
     try:
         quotient = a / b
 
-    except:
+    except(ZeroDivisionError, TypeError):
         quotient = None
 
     finally:
