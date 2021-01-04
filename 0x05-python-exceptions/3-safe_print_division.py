@@ -7,7 +7,7 @@ def safe_print_division(a, b):
     try:
         quotient = a / b
 
-    except ZeroDivisionError:
+    except:
         quotient = None
 
     finally:
