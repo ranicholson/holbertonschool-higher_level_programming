@@ -10,8 +10,9 @@ class Square:
 
         """
         Use __init__ to initialize square with private size
+
         Args:
-             __Square.size (int): private size of square
+             size (int): private size of square
         """
 
         self.__Square_size = size
