@@ -8,11 +8,10 @@ class Square:
 
     def __init__(self, size=None):
 
-        """
-        Use __init__ to initialize square with private size
+        """Use __init__ to initialize square with private size.
 
         Args:
-             size (int): private size of square
+             size (int): Private size of square.
         """
 
         self.__Square_size = size
