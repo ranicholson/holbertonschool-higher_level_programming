@@ -7,7 +7,7 @@ class Square:
 
     """Create a square object"""
 
-    def __init__(self, size=None):
+    def __init__(self, size):
 
         """Use __init__ to initialize square with private size.
 
