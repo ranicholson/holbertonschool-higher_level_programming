@@ -7,7 +7,7 @@ class Square:
 
     """Create a square object"""
 
-    def __init__(self, size):
+    def __init__(self, size=None):
 
         """Use __init__ to initialize square with private size.
 
@@ -15,4 +15,4 @@ class Square:
              size (int): Private size of square.
         """
 
-        self.__Square_size = size
+        self.__size = size
