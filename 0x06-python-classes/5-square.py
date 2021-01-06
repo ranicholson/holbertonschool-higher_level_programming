@@ -49,6 +49,8 @@ class Square:
         Args:
              square (str): used to print square
         """
+        if self.size == 0:
+            print()
         for x in range(self.size):
             square = self.size * "#"
             print(square)
