@@ -46,17 +46,18 @@ class Square:
         Args:
              square (str): used to print square
         """
-        tup1 = self.position[0] * " "
-        tup2 = self.position[1] * "\n"
+        tup1 = self.__position[0] * " "
+        tup2 = self.__position[1] * "\n"
 
         if self.size == 0:
             print()
             return
-        if self.position[1] > 0:
+        if self.__position[1] > 0:
             print(tup2, end="")
         for x in range(self.size):
             square = self.size * "#"
-            print(tup1, square)
+            print(tup1, end="")
+            print(square)
 
     @property
     def position(self):
