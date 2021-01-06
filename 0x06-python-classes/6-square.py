@@ -11,8 +11,8 @@ class Square:
              size (int): Private size of square.
              position (tuple): Position of square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Return area of the square
@@ -68,9 +68,13 @@ class Square:
     def position(self, value):
         """Set the position"""
 
-        if (type(value) is not tuple or value[0] < 0 or value[1] < 0 or
-                len(value) != 2):
+        if (isinstance(value, tuple) is False or
+                len(value) != 2 or
+                isinstance(value[0], int) is False or
+                isinstance(value[1], int) is False or
+                value[0] < 0 or value[1] < 0):
 
             raise TypeError("position must be a tuple of 2 positive integers")
+            return
 
         self.__position = value
