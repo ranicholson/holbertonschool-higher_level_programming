@@ -18,7 +18,7 @@ def add_integer(a, b=98):
     """
 
     if isinstance(a, int) is False:
-        if isinstance(a ,float) is True:
+        if isinstance(a, float) is True:
             a = int(a)
 
         else:

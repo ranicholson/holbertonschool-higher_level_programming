@@ -1,0 +1,61 @@
+add_integer()
+=====================
+
+Using add_integer()
+---------------------
+
+add_integer() is a function that returns the sum of two integers provided.
+The function will accept integer or float values, but the float values must be
+converted to integers
+
+Tests
+======
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+::
+
+	>>> add_integer(2, 2)
+	4
+
+::
+
+	>>> add_integer(0, 0)
+	0
+
+::
+
+	>>> add_integer(5)
+	103
+
+::
+
+	>>> add_integer(-2, -2)
+	-4
+
+::
+
+	>>> add_integer("hot", "dog")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+::
+	>>> add_integer(12, "nope")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+::
+
+	>>> add_integer("nope", 12)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+::
+
+	>>> add_integer(2.2, 2.2)
+	4
+
+::
+
+	>>> add_integer(-2.6, 2.6)
+	0
