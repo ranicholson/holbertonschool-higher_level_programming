@@ -1,0 +1,39 @@
+say_my_name(first_name, last_name="")
+=====================================
+
+Using say_my_name()
+-------------------------------------
+
+say_my_name is a function that prints "My name is <first_name> <last_name>"
+TypeError will be raised in the event that anything other than a string is
+passed to the function.
+
+
+Tests
+=======
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("Fully", "Functional")
+	My name is Fully Functional
+
+::
+
+	>>> say_my_name("John")
+	My name is John 
+
+::
+
+	>>> say_my_name(5)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+::
+
+	>>> say_my_name("Terry", 5)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+::
+
+	>>> say_my_name("")
+	My name is  
