@@ -52,5 +52,5 @@ Tests
 ::
 
 	>>> matrix = [[-0.5, -1, 1], [0, 3.555, 500]]
-	>>> print(matrix_divided(matrix, 1)
-	[[-0.5, -1, 1], [0, 3.56, 500]]
+	>>> print(matrix_divided(matrix, 1))
+	[[-0.5, -1.0, 1.0], [0.0, 3.56, 500.0]]

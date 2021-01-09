@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
     Return: New matrix with values of each element divided by div.
     """
 
-    if isinstance(all(matrix), (int, float)) is False or not matrix:
+    if not matrix:
         raise TypeError("matrix must be a matrix (list of lists)"
                         " of integers/floats")
 
@@ -34,6 +34,9 @@ def matrix_divided(matrix, div):
         if len(x) != rowlen:
             raise TypeError("Each row of the matrix must have the same size")
         for y in x:
+            if isinstance(y, (int, float)) is False:
+                raise TypeError("matrix must be a matrix (list of lists)"
+                                " of integers/floats")
             nlist.append(round((y / div), 2))
         rowlen = len(x)
         clist.append(nlist)
