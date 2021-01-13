@@ -28,4 +28,3 @@ def text_indentation(text):
             print("\n")
             y = 1
 
-    print()
