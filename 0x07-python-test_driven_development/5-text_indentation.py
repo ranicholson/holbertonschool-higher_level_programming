@@ -19,7 +19,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     for x in text:
-        if y == 1:
+        if x == " " and y == 1:
             y = 0
             continue
 

@@ -1,2 +1,43 @@
-This test file will be completed in the future.
+text_indentation(text)
+==========================
 
+Using text_indentation()
+--------------------------
+
+text_indentation is a function that prints two new lines after any of the
+following characters: ".", "?", ":"
+The text must be a string, or a TypeError will be raised
+
+Tests
+======
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+	>>> text_indentation("This. is? a: test")
+	This.
+	<BLANKLINE>
+	is?
+	<BLANKLINE>
+	a:
+	<BLANKLINE>
+	test
+
+::
+
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+::
+
+	>>> text_indentation(10)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+::
+
+	>>> text_indentation("\n")
+	<BLANKLINE>
+	<BLANKLINE>
+
+::
