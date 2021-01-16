@@ -28,4 +28,4 @@ def text_indentation(text):
                 y += 1
         else:
             y += 1
-    print(pstr)
+    print(pstr, end="")
