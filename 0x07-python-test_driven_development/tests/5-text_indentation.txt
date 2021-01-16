@@ -38,6 +38,5 @@ Tests
 
 	>>> text_indentation("\n")
 	<BLANKLINE>
-	<BLANKLINE>
 
 ::
