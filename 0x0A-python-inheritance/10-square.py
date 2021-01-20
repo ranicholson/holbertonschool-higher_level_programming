@@ -12,6 +12,6 @@ class Square(Rectangle):
         """Method to initialize new object in the Square class
         Args: size (int): size of Square to create
         """
-        super().__init__(size, size)
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
