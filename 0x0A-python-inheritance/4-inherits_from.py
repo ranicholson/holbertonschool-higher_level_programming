@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 
-"""Function that returns true if object is an instance of an object inherited
-from the specified class"""
+"""Function that returs true if object is an instance of an object inherited"""
 
 
 def inherits_from(obj, a_class):
