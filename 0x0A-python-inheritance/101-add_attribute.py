@@ -11,7 +11,7 @@ def add_attribute(mclass, aname, aval):
         aval (str): attribute value to set
     """
 
-    if hasattr(mclass, "__dict__"):
+    if hasattr(mclass, "__dict__") is False:
         raise TypeError("can't add new attribute")
 
     setattr(mclass, aname, aval)
