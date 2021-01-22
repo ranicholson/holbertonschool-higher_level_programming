@@ -2,6 +2,8 @@
 
 """Subclass Rectangle inherits from Base class"""
 
+from models.base import Base
+
 
 class Rectangle(Base):
     """Rectangle that inherits from class Base"""
@@ -15,19 +17,19 @@ class Rectangle(Base):
             y ():
             id (int):ID number of rectangle
         """
-        super().init(id)
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
 
-        @property
-        def width(self):
-            """Retrieve the width of Rectangle"""
-            return (self.__width)
+    @property
+    def width(self):
+        """Retrieve the width of Rectangle"""
+        return (self.__width)
 
     @width.setter
-    def width(self, width) def width(self, value):
+    def width(self, value):
         """Function that sets the width of a Rectangle
         Args:
             value (int): Value for the width. Must be int >= 0.
@@ -63,12 +65,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """Function that retrieves the height of a Rectangle"""
+        """Function that retrieves the x of a Rectangle"""
         return (self.__x)
 
     @height.setter
     def x(self, value):
-        """Function that sets the height of a Rectangle
+        """Function that sets the x of a Rectangle
         Args:
             value (int): Must be int > 0
         Raises:
@@ -83,12 +85,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """Function that retrieves the height of a Rectangle"""
+        """Function that retrieves the y of a Rectangle"""
         return (self.__y)
 
     @height.setter
-    def height(self, value):
-        """Function that sets the height of a Rectangle
+    def y(self, value):
+        """Function that sets the y of a Rectangle
         Args:
             value (int): Must be int >= 0
         Raises:
