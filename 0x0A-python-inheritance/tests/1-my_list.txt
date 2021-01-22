@@ -34,3 +34,10 @@ Tests
 	TypeError: unorderable types: int() < str()
 
 ::
+
+	>>> mlist = MyList([0, 1])
+	>>> mlist.append(-1)
+	>>> print(mlist)
+	[0, 1, -1]
+	>>> mlist.print_sorted()
+	[-1, 0, 1]
