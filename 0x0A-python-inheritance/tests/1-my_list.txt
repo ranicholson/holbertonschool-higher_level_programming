@@ -41,3 +41,5 @@ Tests
 	[0, 1, -1]
 	>>> MyList.print_sorted(mlist)
 	[-1, 0, 1]
+	>>> print(mlist)
+	[0, 1, -1]
