@@ -26,9 +26,9 @@ class Rectangle(Base):
             """Retrieve the width of Rectangle"""
             return (self.__width)
 
-        @width.setter
-        def width(self, width) def width(self, value):
-        """Function that sets the width of a Rectangle:
+    @width.setter
+    def width(self, width) def width(self, value):
+        """Function that sets the width of a Rectangle
         Args:
             value (int): Value for the width. Must be int >= 0.
         Raises:
