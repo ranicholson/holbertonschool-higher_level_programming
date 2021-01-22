@@ -39,5 +39,5 @@ Tests
 	>>> mlist.append(-1)
 	>>> print(mlist)
 	[0, 1, -1]
-	>>> mlist.print_sorted()
+	>>> MyList.print_sorted(mlist)
 	[-1, 0, 1]
