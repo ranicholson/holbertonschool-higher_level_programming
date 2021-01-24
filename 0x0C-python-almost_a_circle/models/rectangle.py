@@ -13,8 +13,8 @@ class Rectangle(Base):
         Args:
             width (int): width of Rectangle
             height (int): height of Rectangle
-            x ():
-            y ():
+            x (int):
+            y (int):
             id (int):ID number of rectangle
         """
         super().__init__(id)
@@ -68,7 +68,7 @@ class Rectangle(Base):
         """Function that retrieves the x of a Rectangle"""
         return (self.__x)
 
-    @height.setter
+    @x.setter
     def x(self, value):
         """Function that sets the x of a Rectangle
         Args:
@@ -88,7 +88,7 @@ class Rectangle(Base):
         """Function that retrieves the y of a Rectangle"""
         return (self.__y)
 
-    @height.setter
+    @y.setter
     def y(self, value):
         """Function that sets the y of a Rectangle
         Args:
@@ -108,10 +108,10 @@ class Rectangle(Base):
         return (self.width * self.height)
 
     def display(self):
-         """Prints a rectangle using the # chracter"""
-         if self.__width == 0 or self.__height == 0:
-             print("")
-         else:
+        """Prints a rectangle using the # chracter"""
+        if self.__width == 0 or self.__height == 0:
+            print("")
+        else:
             prow = self.__width * '#'
             nstr = ""
             for x in range(self.__height):
@@ -120,3 +120,9 @@ class Rectangle(Base):
                     break
                 nstr += "\n"
             print(nstr)
+
+    def __str__(self):
+        """Returns string with rectangle description"""
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                        self.y, self.width,
+                                                        self.height))
