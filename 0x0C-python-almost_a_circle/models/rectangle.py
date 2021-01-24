@@ -109,17 +109,15 @@ class Rectangle(Base):
 
     def display(self):
         """Prints a rectangle using the # chracter"""
-        if self.__width == 0 or self.__height == 0:
-            print("")
-        else:
-            prow = self.__width * '#'
-            nstr = ""
-            for x in range(self.__height):
-                nstr += prow
-                if x == (self.__height - 1):
-                    break
-                nstr += "\n"
-            print(nstr)
+        prow = self.__width * '#'
+        nstr = self.y * "\n"
+        for x in range(self.__height):
+            nstr += self.x * " "
+            nstr += prow
+            if x == (self.__height - 1):
+                break
+            nstr += "\n"
+        print(nstr)
 
     def __str__(self):
         """Returns string with rectangle description"""
