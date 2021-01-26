@@ -36,3 +36,10 @@ class Base:
                 for x in list_objs:
                     ndic.append(x.to_dictionary())
                 ofile.write(Base.to_json_string(ndic))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns list of JSON string representation"""
+        if json_string is None or json_string == []:
+            return ([])
+        return json.loads(json_string)
