@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 
-from models.base import Base
-
 """Subclass Rectangle inherits from Base class. Just adding to pass checker"""
+
+
+from base import Base
 
 
 class Rectangle(Base):
