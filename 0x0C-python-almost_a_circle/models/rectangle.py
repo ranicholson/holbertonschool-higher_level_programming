@@ -130,7 +130,11 @@ class Rectangle(Base):
                                                         self.height))
 
     def update(self, *args, **kwargs):
-        """Assigns an argument to each attribute"""
+        """Assigns an argument to each attribute
+        Args:
+            args (args): arguments to deal with
+            kwargs (args): kwarguments to deal with
+        """
         pos = 0
         if args is not None and len(args) > 0:
             for arg in args:
