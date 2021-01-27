@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-"""Subclass Rectangle inherits from Base class"""
 
 from models.base import Base
+
+"""Subclass Rectangle inherits from Base class"""
 
 
 class Rectangle(Base):
@@ -155,5 +156,6 @@ class Rectangle(Base):
                     self.y = arg
 
     def to_dictionary(self):
+        """Gosh dang it I forgot this line"""
         return ({"id": self.id, "width": self.width, "height": self.height,
                  "x": self.x, "y": self.y})
