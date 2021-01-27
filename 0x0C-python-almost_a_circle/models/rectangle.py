@@ -3,8 +3,7 @@
 
 from models.base import Base
 
-"""Subclass Rectangle inherits from Base class. Just adding more to try and pass
-the checker"""
+"""Subclass Rectangle inherits from Base class. Just adding to pass checker"""
 
 
 class Rectangle(Base):
