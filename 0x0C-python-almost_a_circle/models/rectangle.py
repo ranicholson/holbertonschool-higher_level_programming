@@ -4,7 +4,7 @@
 """Subclass Rectangle inherits from Base class. Just adding to pass checker"""
 
 
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
