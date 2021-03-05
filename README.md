@@ -1,6 +1,6 @@
 # Holberton School Higher Level Programming
 
-Adventures in Python!
+New adventures in Python!
 
 ## How can you practice this same project?
 
