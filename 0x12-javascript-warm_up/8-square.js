@@ -2,7 +2,7 @@
 // Script to print a square where first arg is size of square
 
 const x = parseInt(process.argv[2]);
-if (isNaN(x)) {
+if (isNaN(x) || x === 0) {
   console.log('Missing Size');
 } else {
   let size = '';
