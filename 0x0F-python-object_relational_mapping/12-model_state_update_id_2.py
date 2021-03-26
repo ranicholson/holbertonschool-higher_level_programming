@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script that lists specified state object from database"""
+""" Script that changes name of state object from database"""
 
 from sys import argv
 from sqlalchemy import create_engine
@@ -11,9 +11,7 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).filter(State.name == argv[4]).first()
-    if state is None:
-        print("Not found")
-    else:
-        print("{}".format(state.id))
+    state = session.query(State).filter(State.id == 2).first()
+    state.name = "New Mexico"
+    session.commit()
     session.close()
