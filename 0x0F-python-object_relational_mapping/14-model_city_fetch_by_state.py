@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-""" Script that lists first state object from specified database"""
+""" Script that lists all City objects from specified database"""
 
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+from model_city import City
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).order_by(State.id).first()
-    if state is None:
-        print("Nothing")
-    else:
-        print("{}: {}".format(state.id, state.name))
+    for city, state in session.query(City, State)\
+            .filter(City.state_id == State.id).order_by(State.id.asc()):
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
     session.close()
