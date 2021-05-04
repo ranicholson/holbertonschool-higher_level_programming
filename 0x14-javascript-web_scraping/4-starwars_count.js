@@ -7,6 +7,7 @@ request(URLEpisode, function (err, resp, bod) {
   if (err) {
     console.log(err);
   } else {
-    console.log('3');
+    const wedgeprof = JSON.parse(bod);
+    console.log(wedgeprof.films.length);
   }
 });
